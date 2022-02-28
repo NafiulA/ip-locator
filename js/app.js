@@ -1,6 +1,6 @@
 const getClientIP = () => {
     document.getElementById("loading-img").classList.toggle("d-none");
-    fetch("http://ipwhois.app/json/")
+    fetch("https://ipwhois.app/json/")
         .then(res => res.json())
         .then(data => displayDetails(data));
 }
@@ -10,7 +10,7 @@ const getSpecificIP = () => {
     document.getElementById("content").classList.add("d-none");
     const inputField = document.getElementById("input-value");
     const inputValue = inputField.value;
-    const url = `http://ipwhois.app/json/${inputValue}`
+    const url = `https://ipwhois.app/json/${inputValue}`
     fetch(url)
         .then(res => res.json())
         .then(data => displayDetails(data));
