@@ -12,7 +12,48 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-dark py-3">
+            <div id="logo-container" class="container">
+                <a class="navbar-brand text-center" href="#">
+                    <img class="w-50" src="./images/logo.png" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="search-box-container" class="container">
+            <div id="input-area" class="input-group mb-3 mx-auto">
+                <input id="input-value" type="text" class="form-control fs-5" placeholder="IP address">
+                <button class="btn btn-danger text-dark fs-5" type="button" id="search-btn">Search</button>
+            </div>
+        </div>
 
+        <section id="preloader-section" class="container d-flex justify-content-center">
+            <div class="text-center">
+                <img id="loading-img" class="w-50 d-none" src="./images/loading.gif" alt="">
+            </div>
+        </section>
+
+        <section class="container mt-5">
+            <div id="content" class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 card">
+                    <img src="" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">IP: </h5>
+                        <p>Type: </p>
+                        <p>Continent: </p>
+                        <p>Country: </p>
+                        <p>Region: </p>
+                        <p>City: </p>
+                        <p>Org: </p>
+                        <p>ISP: </p>
+                    </div>
+                </div>
+
+
+        </section>
+    </main>
 
     <script src="./js/app.js"></script>
 </body>
